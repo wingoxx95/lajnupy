@@ -9,8 +9,14 @@
     <title>LAJNUPY</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header><h1>LAJNUPY</h1></header>
+    <main>
+        <div id="menu">
+            <div class="menu_button">MAP</div>
+            <div class="menu_button">SITE</div>
+            <div class="menu_button">AGEND</div>
+        </div>
+    </main>
     <footer></footer>
 </body>
 </html>

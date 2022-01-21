@@ -1,0 +1,32 @@
+body{
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#menu{
+    display: flex;
+}
+.menu_button{
+    background-color: gainsboro;
+    padding: 2vw 2vh;
+    margin: 2vw;
+    border: 2px solid black;
+    flex: 1;
+    text-align: center;
+    font-size: 120%;
+    letter-spacing: 5px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.menu_button:hover{
+    background-color: rgb(30, 29, 39);
+    color: whitesmoke;
+    border-radius: 10px;
+    border: 2px dashed whitesmoke;
+}
+#list_map{
+    display: none;
+    z-index: 2;
+    background-color: darkgreen;
+}
+
+
