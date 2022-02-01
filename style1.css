@@ -1,0 +1,174 @@
+    * {
+        box-sizing: border-box;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 0.3rem;
+        color: white;
+    }
+    
+    body {
+        background: url(LOGO.png) center no-repeat fixed;
+        backdrop-filter: blur(20px);
+        background-size: 100% 100%;
+    }
+    
+    #logo {
+        height: auto;
+        width: 30vw;
+    }
+    
+    header {
+        display: flex;
+    }
+    
+    body,
+    html {
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+    
+    h1 {
+        letter-spacing: 0.9rem !important;
+    }
+    /*----------------LABEL ITP.---------------*/
+    
+    label {
+        display: block;
+        width: 100%;
+    }
+    
+    label>input {
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    label>input+div {
+        cursor: pointer;
+        border: 2px solid transparent;
+        padding: 2vh 0;
+        transition: all 0.2s;
+        margin: 2px;
+        border-radius: 10px;
+    }
+    
+    label>input:checked+div {
+        background-color: #3d1458;
+        border: 2px solid #7a748b;
+        color: rgb(218, 218, 218);
+        margin: 2px;
+    }
+    /*-------------------MENU-------------------*/
+    
+    .menu {
+        width: 100%;
+        display: flex;
+    }
+    
+    li {
+        list-style: none;
+    }
+    /*-----------------MENU_BLOCK---------------*/
+    
+    .menu_block_agent,
+    .menu_block_map,
+    .menu_block_site {
+        text-transform: uppercase;
+        position: relative;
+        flex: 1;
+        background-color: #fa4454;
+        color: #0c1b23;
+        text-align: center;
+        margin: 0 2vw;
+        border: 2px solid black;
+    }
+    /*----------------HOVER----------------------*/
+    
+    .menu_block_agent:hover .list_agent,
+    .menu_block_map:hover .list_map,
+    .menu_block_site:hover .list_site {
+        opacity: 1;
+    }
+    /*-------------------LIST-------------------------*/
+    
+    .list_agent,
+    .list_map,
+    .list_site {
+        text-transform: uppercase;
+        transition: all 0.2s ease-out;
+        opacity: 0;
+        z-index: 999;
+        position: absolute;
+        background-color: #0c1b23;
+        color: #fa4454;
+        width: 100%;
+        border: 2px solid black;
+        border-top: none !important;
+        margin-top: 5px;
+        border-radius: 0 0 10px 10px;
+    }
+    /*----------------------SUBMIT-----------------------*/
+    
+    .container {
+        margin: 30vh 0;
+        display: flex;
+        width: 100%;
+    }
+    
+    .submit {
+        flex: 1;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .empty {
+        flex: 1;
+    }
+    
+    .php {
+        flex: 2;
+        text-align: center;
+    }
+    
+    .tabela {
+        display: none;
+    }
+    
+    button {
+        flex: 1;
+        appearance: none;
+        padding: 20px;
+        background-color: #0c1b23;
+        color: #fa4454;
+        text-align: center;
+        border: 2px solid black;
+    }
+    
+    .link_script {
+        display: flex;
+    }
+    
+    a {
+        color: white;
+    }
+    
+    #lajnup_wynik {
+        flex: 1;
+        appearance: none;
+        padding: 20px;
+        background-color: #0c1b23;
+        color: #fa4454;
+        text-align: center;
+        border: 2px solid black;
+        animation-name: wynik;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes wynik {
+        fom {
+            border: 2px purple solid;
+        }
+        to {
+            border: 2px purple dashed;
+            transform: rotate(360deg);
+        }
+    }
